@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guy C. Thorne — interdisciplinary artist, choreographer, creative producer, and arts administrator based in Madison, Wisconsin.">
+  <meta name="description" content="Guy C. Thorne — interdisciplinary artist, choreographer, creative producer, projection designer, and arts administrator based in Madison, Wisconsin.">
   <meta name="theme-color" content="#171914">
   <title>Guy C. Thorne — Movement, Making &amp; Creative Possibility</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +32,14 @@
     a:hover { color: var(--clay); text-decoration-thickness: 2px; }
     a:focus-visible, button:focus-visible, dialog:focus-visible { outline: 3px solid var(--clay); outline-offset: 4px; }
     h1, h2, h3, h4, p { margin-top: 0; }
-    h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.05; letter-spacing: -.04em; }
-    h2 { font-size: clamp(2.6rem, 5.5vw, 4.8rem); font-weight: 700; }
-    h3 { font-size: clamp(1.65rem, 3vw, 2.25rem); font-weight: 700; }
+    h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.08; letter-spacing: -.035em; overflow-wrap: break-word; }
+    h2 { font-size: clamp(2.2rem, 4.8vw, 4.2rem); font-weight: 700; }
+    h3 { font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 700; }
     .wrap { width: min(var(--max), calc(100% - 64px)); margin-inline: auto; }
     .eyebrow { margin-bottom: 24px; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
     .skip-link { position: absolute; top: -100px; left: 16px; z-index: 100; padding: 12px 18px; background: var(--acid); color: var(--ink); }
     .skip-link:focus { top: 12px; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); }
     .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .wordmark { font-family: var(--font-heading); font-size: 1rem; font-weight: 800; letter-spacing: -.04em; text-decoration: none; white-space: nowrap; }
@@ -48,7 +49,7 @@
     .nav a:hover { text-decoration: underline; }
     .hero { position: relative; overflow: hidden; padding: 76px 0 40px; }
     .hero-grid { display: grid; grid-template-columns: 1.35fr .85fr; align-items: center; gap: 45px; }
-    .hero h1 { position: relative; z-index: 2; margin-bottom: 28px; font-size: clamp(4rem, 9vw, 8rem); font-weight: 700; line-height: .94; }
+    .hero h1 { position: relative; z-index: 2; margin-bottom: 28px; font-size: clamp(3.8rem, 8vw, 7.2rem); font-weight: 700; line-height: .96; }
     .hero h1 em { color: var(--clay); font-weight: 500; }
     .hero-intro { max-width: 500px; color: var(--muted); font-size: 1.08rem; }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 30px; }
@@ -64,14 +65,14 @@
     .stage-label { position: absolute; bottom: 20px; left: 24px; color: var(--paper); font-size: .61rem; letter-spacing: .18em; text-transform: uppercase; }
     .hero-bottom { display: flex; justify-content: space-between; gap: 20px; margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .72rem; }
     .section { padding: 100px 0; }
-    .section-heading { display: grid; grid-template-columns: .65fr 1.35fr; gap: 45px; margin-bottom: 45px; }
+    .section-heading { display: grid; grid-template-columns: minmax(280px, 1fr) 1.5fr; gap: 40px; margin-bottom: 45px; }
     .section-heading h2 { margin-bottom: 0; }
     .section-heading > p { max-width: 570px; align-self: end; margin-bottom: 0; color: var(--muted); }
     .about { background: var(--ink); color: var(--paper); }
-    .about-grid { display: grid; grid-template-columns: .65fr 1.35fr; gap: 45px; }
-    .about h2 { max-width: 380px; }
-    .about-copy { max-width: 690px; color: #d7dacd; font-size: 1.08rem; }
-    .about-copy .lead { color: var(--paper); font-size: clamp(1.4rem, 2.7vw, 2rem); line-height: 1.4; letter-spacing: -.025em; }
+    .about-grid { display: grid; grid-template-columns: minmax(260px, 0.8fr) 1.2fr; gap: 48px; align-items: start; }
+    .about h2 { font-size: clamp(2rem, 4.2vw, 3.6rem); line-height: 1.1; margin-bottom: 0; }
+    .about-copy { color: #d7dacd; font-size: 1.08rem; }
+    .about-copy .lead { color: var(--paper); font-size: clamp(1.35rem, 2.4vw, 1.85rem); line-height: 1.4; letter-spacing: -.02em; margin-bottom: 24px; }
     .credentials { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--dark-line); font-size: .8rem; }
     .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
     .filter-button { appearance: none; border: 1px solid var(--ink); border-radius: 999px; padding: 9px 16px; background: transparent; color: var(--ink); font: 600 .78rem var(--font-body); cursor: pointer; transition: background .2s, color .2s; }
@@ -96,14 +97,14 @@
     .practice-note { max-width: 780px; margin: 50px 0 0; font-family: Georgia, serif; font-size: clamp(1.5rem, 3vw, 2.15rem); line-height: 1.4; font-style: italic; }
     .record { background: var(--paper-card); }
     .record-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-    .record h2 { font-size: clamp(2.3rem, 5vw, 3.8rem); }
+    .record h2 { font-size: clamp(2.1rem, 4.5vw, 3.5rem); }
     .record ul { margin: 0; padding: 0; list-style: none; }
     .record li { padding: 19px 0; border-top: 1px solid #bdbfb0; }
     .record li:last-child { border-bottom: 1px solid #bdbfb0; }
     .record a { font-size: .95rem; }
     .record small { display: block; margin-top: 5px; color: var(--muted); }
     .contact { padding: 100px 0 65px; background: var(--acid); }
-    .contact h2 { max-width: 850px; margin-bottom: 30px; font-size: clamp(3rem, 7vw, 6rem); }
+    .contact h2 { max-width: 850px; margin-bottom: 30px; font-size: clamp(2.8rem, 6.5vw, 5.5rem); }
     .contact-email { display: inline-block; overflow-wrap: anywhere; font-size: clamp(1.05rem, 3vw, 1.8rem); }
     .contact p { max-width: 620px; margin-top: 28px; color: #3e4827; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; margin-top: 70px; padding-top: 22px; border-top: 1px solid #69783e; font-size: .72rem; }
@@ -111,7 +112,7 @@
     dialog::backdrop { background: #171914b8; backdrop-filter: blur(3px); }
     .dialog-content { padding: clamp(24px, 5vw, 48px); }
     .dialog-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
-    .dialog-top h2 { margin: 0 0 18px; font-size: clamp(2rem, 5vw, 3.2rem); }
+    .dialog-top h2 { margin: 0 0 18px; font-size: clamp(1.8rem, 4vw, 2.8rem); }
     .dialog-close { flex: 0 0 auto; width: 42px; height: 42px; border: 1px solid var(--ink); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1.35rem; cursor: pointer; }
     .dialog-close:hover { background: var(--ink); color: var(--paper); }
     .dialog-category { margin-bottom: 10px; color: var(--clay); font-size: .7rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
@@ -121,7 +122,7 @@
       .hero-grid { grid-template-columns: 1fr; }
       .stage { min-height: 340px; max-width: 520px; }
       .stage::before { top: 0; } .stage::after { top: 20px; } .stage-orb { top: 90px; }
-      .section-heading, .about-grid, .record-grid { grid-template-columns: 1fr; gap: 22px; }
+      .section-heading, .about-grid, .record-grid { grid-template-columns: 1fr; gap: 24px; }
       .practice-row { grid-template-columns: 40px 1fr; gap: 14px; }
       .practice-row p { grid-column: 2; }
     }
@@ -129,7 +130,7 @@
       .wrap { width: calc(100% - 36px); }
       .header-inner { align-items: flex-start; flex-direction: column; gap: 10px; padding-block: 15px; }
       .nav { gap: 20px; } .nav a { font-size: .72rem; }
-      .hero { padding-top: 45px; } .hero h1 { font-size: clamp(3.5rem, 15vw, 5.5rem); }
+      .hero { padding-top: 45px; } .hero h1 { font-size: clamp(3.2rem, 13vw, 5rem); }
       .hero-bottom, .footer-inner { flex-direction: column; gap: 8px; }
       .section { padding: 65px 0; } .project-grid { grid-template-columns: 1fr; }
       .project { min-height: auto; padding: 26px; } .project-number { margin-bottom: 24px; }
@@ -153,9 +154,9 @@
       <div class="wrap">
         <div class="hero-grid">
           <div>
-            <p class="eyebrow">Artist / Choreographer / Creative Producer</p>
+            <p class="eyebrow">Artist / Choreographer / Projection &amp; Stage Designer / Creative Producer</p>
             <h1 id="hero-title">Movement.<br>Making.<br><em>Possibility.</em></h1>
-            <p class="hero-intro">I’m Guy Thorne. I make interdisciplinary performance and build the relationships, residencies, and structures that help artists bring new work into the world.</p>
+            <p class="hero-intro">I’m Guy Thorne. I make interdisciplinary performance, design visual stage projections, and build the relationships, residencies, and structures that help artists bring new work into the world.</p>
             <div class="actions"><a class="button" href="#work">Explore selected work ↗</a><a class="text-link" href="mailto:thorneguy@gmail.com">Start a conversation</a></div>
           </div>
           <div class="stage" aria-hidden="true"><div class="stage-orb"></div><div class="stage-floor"></div><span class="stage-label">Form / Rhythm / Relation</span></div>
@@ -167,8 +168,8 @@
       <div class="wrap about-grid">
         <div><p class="eyebrow">01 / About</p><h2 id="about-title">An artist.<br>A collaborator.<br>A builder.</h2></div>
         <div class="about-copy">
-          <p class="lead">My work lives between the rehearsal room and the structures that make creative exploration possible.</p>
-          <p>I am an interdisciplinary artist, choreographer, and arts administrator whose practice brings Afro-Caribbean movement into conversation with contemporary performance, storytelling, and visual media.</p>
+          <p class="lead">My work lives between the rehearsal room, dynamic stage environments, and the structures that make creative exploration possible.</p>
+          <p>I am an interdisciplinary artist, choreographer, projection designer, and arts administrator whose practice brings Afro-Caribbean movement into conversation with contemporary performance, digital media, and visual storytelling.</p>
           <p>As co-founder and Artistic Director of FuturPointe Dance, I develop original work through collaboration, experimentation, and revision. My performance background includes Garth Fagan Dance, Dance Theatre of Harlem, and L’Acadco: A United Caribbean Dance Force.</p>
           <p>At the University of Wisconsin–Madison, I coordinate artist residencies that connect creative practice with teaching, research, and community life—supporting both the artistic questions and the practical work behind them.</p>
           <div class="credentials">MBA, Rochester Institute of Technology · BFA in Dance, SUNY Brockport · Professional Diploma in Dance Theatre and Production, Edna Manley College, Jamaica</div>
@@ -178,13 +179,13 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <p class="eyebrow">02 / Selected work</p>
-        <div class="section-heading"><h2 id="work-title">Different forms.<br>Shared inquiry.</h2><p>Original performance, collaborative storytelling, artist residencies, and design. Different ways of asking what movement can hold—and what a work can become.</p></div>
+        <div class="section-heading"><h2 id="work-title">Different forms.<br>Shared inquiry.</h2><p>Original performance, collaborative storytelling, projection design, artist residencies, and stage environments. Different ways of asking what movement can hold—and what a work can become.</p></div>
         <div class="filter-bar" role="group" aria-label="Filter projects">
           <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All work</button>
           <button class="filter-button" type="button" data-filter="performance" aria-pressed="false">Performance</button>
           <button class="filter-button" type="button" data-filter="collaboration" aria-pressed="false">Collaboration</button>
           <button class="filter-button" type="button" data-filter="production" aria-pressed="false">Production</button>
-          <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design</button>
+          <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design &amp; Projections</button>
         </div>
         <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
         <div class="project-grid" id="project-grid">
@@ -206,6 +207,9 @@
           <article class="project" data-category="design" data-title="Water, Seeds and Soil" data-type="Light + Image" data-description="Lighting and projection design for choreographer David Blake’s work, presented at The Place in London and MAC Birmingham." data-role="Lighting / Projection Design">
             <div class="project-number">06 / LIGHT + IMAGE</div><h3>Water, Seeds and Soil</h3><p>Lighting and projection design for choreographer David Blake’s work, presented at The Place in London and MAC Birmingham.</p><div class="project-role">Lighting / Projection Design</div><button class="details-button" type="button">More about this work ↗</button>
           </article>
+          <article class="project" data-category="design" data-title="Projections &amp; Stage Backgrounds" data-type="Theatre + Dance Visual Environments" data-description="Custom visual background development and digital projection mapping for theatrical stage productions and dance works—creating immersive digital scenery that moves in conversation with live performance." data-role="Projection Designer / Visual Concept Artist">
+            <div class="project-number">07 / STAGE &amp; VISUAL DESIGN</div><h3>Digital Scenery &amp; Projections</h3><p>Custom visual background development and projection mapping for theatrical stages and dance productions—crafting digital scenery that responds dynamically to choreography and story.</p><div class="project-role">Projection Designer / Stage Scenographer</div><button class="details-button" type="button">More about this work ↗</button>
+          </article>
         </div>
       </div>
     </section>
@@ -214,8 +218,8 @@
         <p class="eyebrow">03 / How I work</p>
         <div class="section-heading"><h2 id="practice-title">Serve the work.<br>Support the artist.</h2><p>Creative partnership means listening closely, making room for uncertainty, and taking responsibility for the conditions that allow a work to develop.</p></div>
         <div class="practice-list">
-          <article class="practice-row"><span class="index">01</span><h3>Make &amp; develop</h3><p>Choreography, interdisciplinary performance, and collaborative processes that move from first questions through rehearsal, experimentation, and revision.</p></article>
-          <article class="practice-row"><span class="index">02</span><h3>Connect &amp; produce</h3><p>Artist residencies, university-community partnerships, production planning, budgets, and teams that keep artistic ambition connected to practical delivery.</p></article>
+          <article class="practice-row"><span class="index">01</span><h3>Make &amp; develop</h3><p>Choreography, projection design, interdisciplinary performance, and collaborative processes that move from first questions through rehearsal, digital staging, and revision.</p></article>
+          <article class="practice-row"><span class="index">02</span><h3>Connect &amp; produce</h3><p>Artist residencies, technical stage environments, production planning, budgets, and teams that keep artistic ambition connected to practical delivery.</p></article>
           <article class="practice-row"><span class="index">03</span><h3>Teach &amp; exchange</h3><p>Movement workshops, creative-career conversations, and residency-design sessions that translate artistic practice into shared tools for discovery.</p></article>
         </div>
         <p class="practice-note">Start with what a work is trying to become. Then ask what will help it get there.</p>
@@ -232,7 +236,7 @@
       </div>
     </section>
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap"><p class="eyebrow">05 / Begin a conversation</p><h2 id="contact-title">What are you<br>trying to make?</h2><a class="contact-email" href="mailto:thorneguy@gmail.com">thorneguy@gmail.com ↗</a><p>For conversations about performance, artist residencies, creative collaboration, workshops, and production.</p><footer class="footer-inner"><span>© Guy C. Thorne</span><span>Madison, Wisconsin</span><a href="#top">Back to top ↑</a></footer></div>
+      <div class="wrap"><p class="eyebrow">05 / Begin a conversation</p><h2 id="contact-title">What are you<br>trying to make?</h2><a class="contact-email" href="mailto:thorneguy@gmail.com">thorneguy@gmail.com ↗</a><p>For conversations about performance, stage projection design, artist residencies, creative collaboration, workshops, and production.</p><footer class="footer-inner"><span>© Guy C. Thorne</span><span>Madison, Wisconsin</span><a href="#top">Back to top ↑</a></footer></div>
     </section>
   </main>
   <dialog id="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
